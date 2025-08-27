@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+     height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,#A4B8C4, #6E8387);
+}
+section{
+    background-color:#fcfafaab ;
+    height: 900px;
+    width: 1000px; 
+    text-align: center;
+    display: block  ;
+}
+h1{
+    
+}
+label{
+    
+}
