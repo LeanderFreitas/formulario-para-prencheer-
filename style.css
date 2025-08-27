@@ -20,8 +20,12 @@ section{
     display: block  ;
 }
 h1{
-    
+    padding: 30px;
+
 }
 label{
-    
+    padding: 5px;
+}
+input{
+    padding: 4px;
 }

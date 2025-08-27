@@ -10,77 +10,86 @@
     <main>
         <section>
                 <h1>Preencher os dados no formulário.</h1>
-            <label for="fname">Nome:</label>
-            <input type="text" id="fname" name="fname"><br>
-            <br>
-
-            <br>
-            <label for="lname">Sobrenome:</label>
-            <input type="text" id="lname" name="lname">
-            <br>
-
-            <br>
-            <label for="data">Data de nascimento</label>   
-            <input type="date" name="event_date"><br>
-            <br>
-
-            <label for="favcolor">Selecione sua cor favorita:</label>
-            <input type="color" id="favcolor" name="favcolor" value="#ffffff">
-            <br>
-            <br>
-            <label for="estado">Estado:</label>
-                <select id="estado" name="estado">
-                    <option value="">-- Selecione um Estado --</option>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                </select>
-                    <br>
-                    <br>
-                       <label for="escolaridade">Escolha a sua escolaridade:</label>
-                    <select name="escolaridade" id="escolaridade">
-                        <option value="">Selecione uma opção</option>
-                        <option value="Ensino Fundamental">Ensino Fundamental</option>
-                        <option value="Ensino Médio">Ensino Médio</option>
-                        <option value="Ensino Superior">Ensino Superior</option>
-                        <option value="Pós-Graduação">Pós-Graduação</option>
-                        <option value="Outro">Outro</option>
+            <form action="cadatro.php" method="get" autocomplete="on">
+                <label for="fname">Nome:</label>
+                <input type="text" id="fname" name="fname" min="0" maxlength="10" placeholder="insira o E-mail" ><br>
+                <br>
+                <label for="lname">Sobrenome:</label>
+                <input type="text" id="lname" name="lname" min="0" maxlength="10">
+                <br>
+                <br>
+                <label for="data">Data de nascimento:</label>
+                <input type="date" name="event_date"><br>
+                <br>
+                <label for="favcolor">Selecione sua cor favorita:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ffffff">
+                <br>
+                <br>
+                
+                <label for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="">-- Selecione um Estado --</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
                     </select>
+                        <br>
+                        <br>
+                           <label for="escolaridade">Escolha a sua escolaridade:</label>
+                        <select name="escolaridade" id="escolaridade">
+                            <option value="">Selecione uma opção</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental</option>
+                            <option value="Ensino Médio">Ensino Médio</option>
+                            <option value="Ensino Superior">Ensino Superior</option>
+                            <option value="Pós-Graduação">Pós-Graduação</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <br>
+                        <br>
+                        <p class="trabalha">voce trabalha?</p>
+                    <input type="radio" id="isim" name="fav_language" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="inão" name="fav_language" value="não">
+                    <label for="não">Não</label>
                     <br>
+                     <p class="email">
+                    <label for="iemail">E-mail:</label>
+                    <input type="text" name="email" required minlength="50" maxlength="200" size="20" placeholder="insira o E-mail" autocomplete="email">
+                    </p>
                     <br>
-                    <p>voce trabalha?</p>
-                <input type="radio" id="isim" name="fav_language" value="sim">
-                <label for="sim">Sim</label>
-                <input type="radio" id="inão" name="fav_language" value="não">
-                <label for="não">Não</label><br>
+                    <p class="senha">
+                    <label for="isen">Senha:</label>
+                    <input type="password" name="senha" id="isen" required minlength="8" max="20" size="10" placeholder="minino 8 letras"  autocomplete="current-password">
+                    </p> 
                     <br>
-                    <br>
-                <p class="dados">
-                    <input class="submit" type="submit" value="Enviar">
-                    <input class="reset" type="reset" value="limpar">
-                </p>
+                    
+                    <p class="dados">
+                        <input class="submit" type="submit" value="Enviar">
+                        <input class="reset" type="reset" value="limpar">
+                    </p>
+            </form>
         </section>
     </main>
 </body>
